@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Footer: hsl(228, 45%, 44%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+
+  --poppins: "Poppins", serif;
+  --poppins-extra-light: 200 1.2em/150% var(--poppins);
+  --poppins-regular: 400 2em/100% var(--poppins);
+  --poppins-semibold: 600 2.1em/100% var(--poppins);
+}
