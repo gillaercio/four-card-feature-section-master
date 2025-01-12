@@ -28,8 +28,7 @@ body {
 }
 
 #header p {
-  /* display: grid; */
-  /* grid-template-columns: repeat(1, minmax(250px, 350px)); */
+  max-width: 650px;
   padding-inline: 20px;
 }
 
@@ -44,6 +43,7 @@ body {
 .card {
   display: grid;
   width: 100%;
+  max-width: 340px;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
@@ -82,7 +82,7 @@ body {
   justify-self: end;
 }
 
-.card .card-title {
+.card-title {
   font: var(--poppins-titles);
   color: var(--Very-Dark-Blue);
 }
@@ -109,4 +109,40 @@ body {
 .attribution a:hover {
   text-decoration: underline;
   color: var(--Footer);
+}
+
+@media (width > 720px) {
+  #header h1 {
+    font-size: 3em;
+  }
+
+  #header h2 {
+    font-size: 3em;
+  }
+
+  #header p {
+    font-size: 1.6em;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 1024px) {
+  .cards {
+    grid-template-areas: 
+    "supervisor team calculator"
+    "supervisor karma calculator";
+  }
+
+  .border-cyan {
+    grid-area: supervisor;
+    align-self: center;
+  }
+
+  .border-blue {
+    grid-area: calculator;
+    align-self: center;
+  }
 }
