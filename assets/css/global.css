@@ -22,8 +22,8 @@ html {
   --Very-Light-Gray: hsl(0, 0%, 98%);
 
   --poppins: "Poppins", serif;
-  --poppins-extra-light: 200 1.2em/150% var(--poppins);
-  --poppins-regular: 400 2em/100% var(--poppins);
+  --poppins-extra-light: 400 1.4em/150% var(--poppins);
+  --poppins-regular: 200 2.3em/100% var(--poppins);
   --poppins-titles: 600 1.5em/100% var(--poppins);
-  --poppins-semibold: 600 2.1em/100% var(--poppins);
+  --poppins-semibold: 600 2.3em/100% var(--poppins);
 }
